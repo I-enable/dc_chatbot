@@ -5,12 +5,11 @@ import random
 from var_name import USER_AGENT
 
 
-wakmagall = "https://gall.dcinside.com/mgallery/board/lists?id=wackgood"
-isedol = "https://gall.dcinside.com/mgallery/board/lists?id=leesedol"
+
 def uurl():
     global html_list
     
-    url = wakmagall
+    url = ""
     headers = USER_AGENT
     res = requests.get(url, headers=headers) 
     res.raise_for_status()
